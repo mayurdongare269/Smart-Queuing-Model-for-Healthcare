@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Interface</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <h1>Patient Portal</h1>
+  </header>
+
+  <main>
+    <section id="login-section">
+      <h2 id="login-heading">Login</h2>
+      <form id="login-form">
+        <div id="registration-fields" style="display: none;">
+          <input type="text" id="name" placeholder="Name" required>
+          <input type="number" id="age" placeholder="Age" required>
+        </div>
+        <input type="text" id="id" placeholder="Email ID" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <!-- <input type="text" id="otp" placeholder="OTP" required> -->
+        <!-- <button type="submit" id="login-btn" onclick="window.location.href='dashboard.html'">Login</button> -->
+        <button type="submit" id="login-btn">Login</button>
+        <button type="button" id="toggle-login">Switch to Register</button>
+      </form>
+      <p id="error-message" style="color: red; display: none;"></p> <!-- Error message placeholder -->
+
+    </section>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyCEIwIKAI_hktCfyC6teAFwUI15nNbGJN0",
+      authDomain: "easy-med-2324.firebaseapp.com",
+      projectId: "easy-med-2324",
+      storageBucket: "easy-med-2324.firebasestorage.app",
+      messagingSenderId: "956498554026",
+      appId: "1:956498554026:web:c05106e938b1ad554b74d3",
+      measurementId: "G-TK8Z9D8DPX"
+    };
+
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+  </script>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

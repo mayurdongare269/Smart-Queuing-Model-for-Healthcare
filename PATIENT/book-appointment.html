@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="book-appointment.css">
+</head>
+<body>
+  <header>
+    <h1>Book an Appointment</h1>
+  </header>
+
+  <main>
+    <section id="appointment-section">
+      <form id="appointment-form">
+        <select id="department" required>
+          <option value="">Select Department</option>
+          <option value="General">General</option>
+          <option value="OPD">OPD</option>
+          <option value="Surgery">Surgery</option>
+        </select>
+        <select id="doctor" required>
+          <option value="">Select Doctor</option>
+        </select>
+        <div id="doctor-slot-details">
+          <!-- Available doctor slots will be displayed here -->
+        </div><br>
+        <input type="date" id="appointment-date" required>
+        <input type="time" id="appointment-time" required>
+        <button type="submit">Confirm Appointment</button>
+      </form>
+      <button id="back-btn" onclick="window.location.href='patient-dashboard.html'">Back to Dashboard</button>
+    </section>
+  </main>
+  
+  <script src="book-appointment.js"></script>
+</body>
+</html>

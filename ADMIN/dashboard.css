@@ -1,0 +1,243 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    background-image: url("pbg1.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+#dashboard-section {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#dashboard-section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    margin-top: -4%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+
+#analytics {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1;
+    margin: 0 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #e67e22;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.9;
+} */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #ebe3ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  body .background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url("adminbg5.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    filter: opacity(0.7);
+    z-index: -1;
+  
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #165e1e;
+    color: #fff;
+    width: 25%;
+    margin-right: 30px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* #dashboard-section {
+    display: grid;
+    grid-template-rows: repeat(auto-fit,3, 1fr);
+    grid-template-columns: repeat(auto-fit,2, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-right: 10%;
+  } */
+  
+  #dashboard-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    margin-top: -4%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  
+  .card {
+    background-image: url("lightgreen.png");
+    background-size: cover;
+    /* background-image: url("hospitalbg3.jpg"); */
+    padding: 30px;
+    width: 70%;
+    height: 25vh;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    margin-right: 25px;
+    margin-bottom: 25px;
+    margin-top: 35px;
+    transition-duration: 0.6s;
+  }
+  
+  
+  .card h3 {
+    margin-bottom: 10px;
+    margin-top: 13px;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+    transition-property: inherit;
+  }
+  
+  .card p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background-image: url("green1.png");
+    border: 1px solid #257f30;
+  }
+  
+  a{
+    text-decoration: none;
+    width: 33%;
+    color: #8ce196;
+  }
+  
+  .dashboard-buttons {
+    margin-left: 30px;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  button {
+    padding: 10px 10px;
+    border-radius: 4px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    color: #fff;
+    transition: opacity 0.2s ease;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  button:nth-child(1) {
+    background-color: #e67e22;
+  }
+  
+  button:nth-child(2) {
+    background-color: #e67e22;
+  }
+  
+  @media (max-width: 500px) {
+    main {
+        padding: 10px;
+    }
+  
+    .card {
+        padding: 15px;
+    }
+  }
+
+  
+  /* <!-- <div class="dashboard-buttons">
+                <button onclick="window.location.href='hospital-appointment.html'">Manage Appointments</button>
+                <button onclick="window.location.href='hospital-inventory.html'">Inventory Management</button>
+            </div> --> */

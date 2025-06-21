@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details</title>
+    <link rel="stylesheet" href="patient-details.css">
+</head>
+<body>
+    <div class="background"></div>
+    
+    <header>
+        <h1>Patient Details</h1>
+        <!-- <button onclick="goBack()" class="back-button">Back to Dashboard</button> -->
+    </header>
+
+    <main>
+        <div class="main">
+            <section class="patient-info">
+                <div class="photo">
+                    <img src="profile-icon.jpg" alt="Patient Photo" id="patient-photo">
+                </div>
+                <div class="details">
+                    <h2 id="patient-name">John Doe</h2>
+                    <p><strong>Age:</strong> <span id="patient-age">45</span></p>
+                    <p><strong>Contact:</strong> <span id="patient-contact">+1-234-567-890</span></p>
+                    <p><strong>Address:</strong> <span id="patient-address">742 Evergreen Terrace, Springfield, IL 62704, USA</span></p>
+                    <p><strong>Medical History:</strong></p>
+                    <ul id="patient-history">
+                        <li>Hypertension</li>
+                        <li>Diabetes</li>
+                        <li>Recent Surgery - Appendectomy (March 2024)</li>
+                    </ul>
+                </div>
+                <button onclick="window.location.href='patient-dashboard.html'" class="back-button">Back to Dashboard</button>
+            </section>
+        </div>
+        
+    </main>
+
+    <script src="patient-details.js"></script>
+</body>
+</html>

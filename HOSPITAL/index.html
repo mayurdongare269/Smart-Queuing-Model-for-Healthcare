@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Interface</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <header>
+        <h1>Hospital Portal</h1>
+    </header>
+
+    <main>
+        <section id="login-section">
+            <h2 id="login-heading">Login</h2>
+            <form id="login-form">
+                <div id="registration-fields" style="display: none;">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="number" id="age" placeholder="Age" required>
+                    <input type="text" id="contact" placeholder="Contact" required>
+                </div>
+
+                <label for="role"></label>
+                  <select name="role" id="role" required>
+                    <option value="R">Choose role</option>
+                    <option value="M">Management</option>
+                    <option value="D">Doctor</option>
+                    <option value="S">Support Staff</option>
+                  </select>
+
+                <input type="text" id="id" placeholder="ID" required>
+                <input type="password" id="password" placeholder="password" required>
+
+                <!-- <button type="submit" id="login-btn" onclick="window.location.href='hospital-dashboard.html'">Login</button> -->
+                <button type="submit" id="login-btn" >Login</button>
+                <button type="button" id="toggle-login">Switch to Register</button>
+            </form>
+            <p id="error-message" style="color: red; display: none;"></p> <!-- Error message placeholder -->
+
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

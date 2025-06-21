@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Records</title>
+  <link rel="stylesheet" href="medical-records.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Medical Records</h1>
+    </div>
+  </header>
+
+  <!-- <main>
+    <section id="records-section">
+      <h2>Record Details</h2> 
+      <ul class="records-list">
+        <li>Appointment with <strong>Dr. John Doe</strong> - <span class="date">Oct 1st, 2024</span></li>
+        <li>Prescription: <strong>Medicine A, Medicine B</strong></li>
+        <li>Lab Test Results - <span class="date">Oct 5th, 2024</span></li>
+      </ul>
+      <div class="records-buttons">
+        <button id="download-btn">Download Records</button>
+        <button onclick="window.location.href='patient-dashboard.html'">Back to Dashboard</button>
+      </div>
+    </section>
+  </main> -->
+
+
+  <main>
+    <section id="records-section">
+      <h2>Record Details</h2>
+      <ul class="records-list">
+        <li>
+          <strong>Appointment with Dr. John Doe</strong> 
+          <span class="date">Oct 1st, 2024</span>
+          <p><em>Doctor's Notes:</em> Patient reports mild fever and cough for the past 3 days. Diagnosed with acute bronchitis.</p>
+        </li>
+        <li>
+          <strong>Prescription:</strong>
+          <ul>
+            <li><strong>Medicine A</strong> - Paracetamol 500mg, Take 1 tablet every 6 hours for 5 days.</li>
+            <li><strong>Medicine B</strong> - Azithromycin 250mg, Take 1 tablet once a day for 3 days.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Lab Test Results</strong> - <span class="date">Oct 5th, 2024</span>
+          <p><em>Blood Test:</em> Normal WBC count, slightly elevated ESR.</p>
+          <p><em>X-ray:</em> No signs of pneumonia.</p>
+        </li>
+      </ul>
+      <div class="records-buttons">
+        <button id="download-btn">Download Records</button>
+        <button onclick="window.location.href='patient-dashboard.html'">Back to Dashboard</button>
+      </div>
+    </section>
+  </main>
+  
+
+  <!-- Modal for displaying record details -->
+  <div id="record-modal" class="modal">
+    <div class="modal-content" id="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <h2>Record Details</h2>
+      <p>Details go here...</p>
+    </div>
+  </div>
+
+  <script src="medical-records.js"></script> 
+</body>
+</html>

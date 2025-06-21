@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bed and Resource Management</title>
+    <link rel="stylesheet" href="hospital-bed-resource.css">
+</head>
+<body>
+    <header>
+        <h1>Bed and Resource Management</h1>
+    </header>
+
+    <main>
+        <section id="bed-resource-section">
+            <h3>Current Bed Availability</h3>
+            <div id="bed-status">
+                <p>Available Beds: <span id="available-beds">30</span></p>
+                <p>Occupied Beds: <span id="occupied-beds">20</span></p>
+            </div><br>
+            <h3>Update Bed Status</h3>
+            <form id="bed-update-form">
+                <label for="bed-type">Bed Type:</label>
+                <select id="bed-type">
+                    <option value="General">General</option>
+                    <option value="ICU">ICU</option>
+                </select>
+                <label for="update-status">Change Status:</label>
+                <select id="update-status">
+                    <option value="Available">Available</option>
+                    <option value="Occupied">Occupied</option>
+                </select>
+                <button type="submit">Update Status</button>
+            </form>
+            <button id="back-btn" onclick="window.location.href='hospital-dashboard.html'">Back to Dashboard</button>
+        </section>
+    </main>
+
+    <script src="hospital-bed-resource.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    background-image: url("pbg1.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+#queue-section {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#current-status {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+#status-box {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+p {
+    font-size: 1em;
+    color: #333;
+}
+
+button {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    background-color: #4a90e2;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+
+button.back {
+    background-color: #e67e22;
+}
+
+button:hover {
+    opacity: 0.9;
+}

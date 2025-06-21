@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Hospital</title>
+  <link rel="stylesheet" href="find-hospital.css">
+</head>
+<body>
+  <header>
+    <h1>Book an Appointment</h1>
+  </header>
+
+  <main>
+    <section id="find-hospital-section">
+      <form id="hospital-search-form">
+        <input type="text" id="location" placeholder="Enter your location" required>
+        <button type="submit">Search Hospitals</button>
+      </form><br>
+      <div id="hospital-results">
+        <!-- List of hospitals will be displayed here -->
+      </div>
+      <div id="hospital-selection">
+        <h2>Select a Hospital</h2>
+        <select id="hospital-list">
+          <option value="">Select a Hospital</option>
+        </select>
+        <div id="hospital-details">
+          <!-- Details of available OPD slots for the selected hospital will be displayed here -->
+        </div>
+        <button id="confirm-doctor-btn" onclick="window.location.href='book-appointment.html'">Confirm Selection</button><br>
+      </div>
+      <button class="back" onclick="window.location.href='patient-dashboard.html'">Back to Dashboard</button>
+    </section>
+  </main>
+
+  <script src="find-hospital.js"></script>
+</body>
+</html>

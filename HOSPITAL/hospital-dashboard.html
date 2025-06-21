@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Dashboard</title>
+    <link rel="stylesheet" href="hospital-dashboard.css">
+</head>
+<body>
+    <div class="background"></div>
+    <header>
+        <h1>Hospital Dashboard</h1>
+    </header>
+
+    <main>
+        <section id="dashboard-section">
+            
+            <a for="card1" href="hospital-appointment.html">
+                <div id="card1" class="card upcoming">
+                    <h3>Manage Appointments</h3>
+                    <ul></ul>
+             </div>
+            </a>
+            
+            <a for="card2" href="hospital-bed-resource.html">
+                <div id="card2" class="card notify">
+                    <h3>Resource Management</h3>
+                    <!-- <p>No new notifications.</p> -->
+                </div>
+            </a>
+
+            <a href="hospital-inventory.html">
+                <div class="card inventory">
+                    <h3>Inventory Status</h3>
+                    <!-- <p>No low stock alerts.</p> -->
+                </div>
+            </a>
+
+            <a for="card4" href="hospital-patient-records.html">
+                <div id="card4" class="card records">
+                    <h3>Patient Records</h3>
+                    <!-- <p>No records found.</p> -->
+                </div>
+            </a>
+
+            <!-- <div class="dashboard-buttons">
+                <button onclick="window.location.href='hospital-appointment.html'">Manage Appointments</button>
+                <button onclick="window.location.href='hospital-inventory.html'">Inventory Management</button>
+            </div> -->
+        </section>
+    </main>
+
+    <script src="hospital-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Records Management</title>
+    <link rel="stylesheet" href="hospital-patient-records.css">
+</head>
+<body>
+    <header>
+        <h1>Patient Records Management</h1>
+    </header>
+
+    <main>
+        <section id="patient-records-section">
+            <h2>Patient Records</h2>
+            <ul id="records-list"></ul>
+            <h2>Add Patient Record</h2>
+            <form id="patient-records-form">
+                <input type="text" id="patient-name" placeholder="Patient Name" required>
+                <input type="text" id="patient-condition" placeholder="Condition" required>
+                <input type="date" id="admission-date" required>
+                <button type="submit">Add Record</button>
+            </form>
+            <button id="back-btn" onclick="window.location.href='hospital-dashboard.html'">Back to Dashboard</button>
+        </section>
+    </main>
+
+    <script src="hospital-patient-records.js"></script>
+</body>
+</html>
