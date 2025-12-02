@@ -15,9 +15,7 @@ Providing a robust inventory management system
 Allowing scalability and integration with city-wide healthcare networks
 
 👨‍💻 Project Members
-Mayur Dongare – GitHub | LinkedIn
-
-Niranjan Pawar
+Mayur Dongare & Niranjan Pawar
 
 🎯 Objectives
 ✅ Reduce patient wait times using queuing models
@@ -123,8 +121,8 @@ KIT's College of Engineering (Autonomous), Kolhapur
 🤝 Acknowledgement
 We extend our heartfelt thanks to:
 
-Dr. Mamata Kalas – Project Guide
+Dr. Mamata Kalas - Project Guide
 
-Dr. L.A. Hadimani – Head of Department, CSE
+Dr. L.A. Hadimani - Head of Department, CSE
 
-Dr. M.B. Vanarotti – Director, KITCOEK
+Dr. M.B. Vanarotti - Director, KITCOEK
